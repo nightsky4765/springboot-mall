@@ -2,7 +2,6 @@ package com.yuan.springbootmall.rowmapper;
 
 import com.yuan.springbootmall.model.Product;
 import org.springframework.jdbc.core.RowMapper;
-import org.springframework.lang.Nullable;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
