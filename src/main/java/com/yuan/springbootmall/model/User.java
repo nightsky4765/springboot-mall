@@ -13,7 +13,7 @@ public class User {
     private String password;
 
     private Date createdDate;
-    private Date lateModifiedDate;
+    private Date lastModifiedDate;
 
     public Integer getUserId() {
         return userId;
@@ -47,11 +47,11 @@ public class User {
         this.createdDate = createdDate;
     }
 
-    public Date getLateModifiedDate() {
-        return lateModifiedDate;
+    public Date getLastModifiedDate() {
+        return lastModifiedDate;
     }
 
-    public void setLateModifiedDate(Date lateModifiedDate) {
-        this.lateModifiedDate = lateModifiedDate;
+    public void setLastModifiedDate(Date lastModifiedDate) {
+        this.lastModifiedDate = lastModifiedDate;
     }
 }
