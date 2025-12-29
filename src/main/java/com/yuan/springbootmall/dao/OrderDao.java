@@ -1,11 +1,16 @@
 package com.yuan.springbootmall.dao;
 
+import com.yuan.springbootmall.dto.OrderQueryParams;
 import com.yuan.springbootmall.model.Order;
 import com.yuan.springbootmall.model.OrderItem;
 
 import java.util.List;
 
 public interface OrderDao {
+
+    Integer countOrder(OrderQueryParams orderQueryParams);
+
+    List<Order> getOrders(OrderQueryParams orderQueryParams);
 
     Order getOrderById(Integer orderId);
 
@@ -14,5 +19,4 @@ public interface OrderDao {
     Integer createOrder(Integer userId, Integer totalAmount);
 
     void createOrderItems(Integer orderId, List<OrderItem> orderItemList);
-
 }
